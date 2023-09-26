@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+    background-image: url("images/piatra.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 33.33vh;
+}
+
+#activities {
+    background-color: #F8F8F8;
+    height: 33.33vh;
+    margin-top: 10px;
+}
+
+#activity-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+#restaurant-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+#restaurants {
+    background-color: #303030;
+    height: 33.33vh;
+    padding: 10px;
+}
+
+
+#visit-btn {
+    margin-top: 10px;
+    border: 2px solid whitesmoke;
+    padding: 5px 10px;
+    background: #262432;
+    color: whitesmoke;
+    font-family: 'Cinzel', serif;
+}
+
+#visit-btn:hover {
+    box-shadow: 2px 1px whitesmoke;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+}
+
+#restaurant-title {
+    color: #F8F8F8;
+}
+
+#activity-title {
+    color: #303030;
+}
+
+.activity-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px black;
+    transition: 0.8s ease;
+}
+
+.activity-img:hover {
+    width: 180px;
+    height: 180px;
+}
+
+.activity-img:hover ~ .activity-heading {
+    display: none;
+}
+
+.activity-img:hover ~ .activity-desc {
+    display: none;
+}
+
+.activity-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.activity-desc {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+}
+
+.restaurant-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px black;
+    transition: 0.8s ease;
+}
+
+.restaurant-img:hover {
+    width: 180px;
+    height: 180px;
+}
+
+.restaurant-img:hover ~ .restaurant-heading {
+    display: none;
+}
+
+.restaurant-img:hover ~ .restaurant-reviews {
+    display: none;
+}
+
+.restaurant-img:hover + #search-btn {
+    display: none;
+}
+
+.restaurant-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #F8F8F8;
+}
+
+.restaurant-heading:hover {
+    cursor: pointer;
+}
+
+.restaurant-links {
+    color: #F8F8F8;
+}
+
+.restaurant-reviews {
+    color: #F8F8F8;
+    margin-top: 0; 
+    text-decoration: none;
+}
+
+.restaurant-reviews:hover {
+    color: yellow;
+}
+
+#search-btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #F8F8F8;
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    border: 1px solid black;
+}
+
+#search-btn-text {
+    text-decoration: none;
+    color: #303030;
+}
+
+#search-btn:hover {
+    box-shadow: 2px 2px lightsteelblue;
+}
